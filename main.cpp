@@ -1,5 +1,5 @@
 #include <iostream>
-
+#include "fns.cpp"
 int main() {
 	Complex c1;
 	c1.print();
