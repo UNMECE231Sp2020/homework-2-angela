@@ -11,7 +11,9 @@ class Complex{
 		//Default constructor with arguments
 		Complex(double real, double imag);
 		//Copy constructor
-		Complex(const Complex &Complex);
+
+		//TODO: Cannot have a user defined datatype as a variable
+		Complex(const Complex &/**/Complex/**/);
 		~Complex();
 
 		double getreal();
@@ -19,6 +21,7 @@ class Complex{
 
 		void print(Complex c1);
 		
+		//TODO: Complex:: is not needed here
 		Complex Complex::add(Complex c2);
 		Complex Complex::sub(Complex c2);			
 		Complex Complex::mult(Complex c2);
@@ -34,5 +37,6 @@ class Complex{
 		Complex operator=(Complex comp);
 
 		friend std::ostream& operator<<(std::ostream &out, const Complex &c);
+		//TODO: should be >> not <<
 		friend std::istream& operator<<(std::istream &in, Complex &c);
 };
