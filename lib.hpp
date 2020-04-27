@@ -22,10 +22,10 @@ class Complex{
 		void print(Complex c1);
 		
 		//TODO: Complex:: is not needed here
-		Complex Complex::add(Complex c2);
-		Complex Complex::sub(Complex c2);			
-		Complex Complex::mult(Complex c2);
-		Complex Complex::div(Complex c2);
+		Complex add(Complex c2);
+		Complex sub(Complex c2);			
+		Complex mult(Complex c2);
+		Complex div(Complex c2);
 		Complex conj(Complex c1);
 		Complex magnitude(Complex c1);
 		Complex phase(Complex c1);
@@ -38,5 +38,5 @@ class Complex{
 
 		friend std::ostream& operator<<(std::ostream &out, const Complex &c);
 		//TODO: should be >> not <<
-		friend std::istream& operator<<(std::istream &in, Complex &c);
+		friend std::istream& operator>>(std::istream &in, Complex &c);
 };
